@@ -1,0 +1,35 @@
+h1 {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    color: #777777;
+    width: 960px;
+    font-family: Arial, 'Helvetic Neue', Helvetica, sans-serif;
+    background-image: url(assets/images/gravel.png)
+}
+
+main {
+    background-color: #ffffff;
+    border-color: #dddddd;
+    flex: 1 0 auto;
+}
+
+/* color will be #cccccc. currently border not working.*/
+.main-header {
+    background-color: #ffffff;
+    color: #4aaaa5;
+    border: 5px;
+    border-color: red;
+}
+footer {
+    background-color: #666666;
+    border-top: 5px #4aaaa5 solid;
+    flex-shrink: 0;
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+
