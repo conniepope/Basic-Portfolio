@@ -1,35 +1,128 @@
+
+body {
+    color: #777777;
+    font-family: Arial, 'Helvetic Neue', Helvetica, sans-serif;
+    margin: auto;
+    position: relative;
+}
+
+
+header {
+    width: 960px;
+    margin: auto;
+    height: 75px;
+}
+
 h1 {
     background-color: #4aaaa5;
     color: white;
-    padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-body {
+
+#name {
+    float: left;
+    display: inline;
+    padding: 10px 20px 10px 20px;
+}
+
+ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    float: right;
+
+}
+a {
+    padding: 8px;
+    text-decoration: none;
     color: #777777;
-    width: 960px;
-    font-family: Arial, 'Helvetic Neue', Helvetica, sans-serif;
-    background-image: url(assets/images/gravel.png)
+
+}
+
+li {
+    list-style-type: none;
+    border-right: 1px solid #dddddd;
+    display: inline;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+/* background-image not working. Tried with "assets/images/gravel.png" also.
+Also tried putting the background-image under different tags, still no luck.*/
+
+div {
+    margin: auto;
+    border-top: 2px solid #777777;
+    background-image: url("gravel.png");
+    background-repeat: repeat;
+    flex: 1 0 auto;
+
 }
 
 main {
     background-color: #ffffff;
-    border-color: #dddddd;
-    flex: 1 0 auto;
+    clear: left;
+    border: 2px solid #dddddd;
+    padding: 0px 20px 20px 20px;
+    margin: 20px auto;
+    width: 920px;
+    overflow: auto;
+
 }
 
-/* color will be #cccccc. currently border not working.*/
 .main-header {
     background-color: #ffffff;
     color: #4aaaa5;
-    border: 5px;
-    border-color: red;
+    border-bottom: 3px solid #dddddd;
 }
+
+#me {
+    float: left;
+    margin-right: 20px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 5px;
+}
+
+.port-img {
+    padding: 0px 20px 20px 0px;
+    clear: both;
+}
+
+h3 {
+    display: inline;
+    color: white;
+    background-color: #4aaaa5;
+    float: left;
+    padding: 10px 20px;
+    width: 360px;
+    margin: 0px 32px 0px 8px;
+    text-align: center;
+    position: relative;
+    top: -80px;
+}
+
 footer {
     background-color: #666666;
     border-top: 5px #4aaaa5 solid;
     flex-shrink: 0;
     color: white;
-    font-size: small;
+    font-size: 60%;
     text-align: center;
+    padding-bottom: 2px;
+    clear: both;
 }
+
+
 
