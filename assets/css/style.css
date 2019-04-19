@@ -50,16 +50,15 @@ li:last-child {
     border-right: none;
 }
 
-/* background-image not working. Tried with "assets/images/gravel.png" also.
-Also tried putting the background-image under different tags, still no luck.*/
+/* background-image not working. Tried with "assets/images/gravel.png" also.c
+Also tried putting the background-image under different tags, still no luck.   
+url('assets/images/gravel.png');   */
 
 div {
     margin: auto;
     border-top: 2px solid #777777;
-    background-image: url("gravel.png");
-    background-repeat: repeat;
+    background: url("gravel.png");
     flex: 1 0 auto;
-
 }
 
 main {
