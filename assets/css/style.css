@@ -3,7 +3,6 @@ body {
     color: #777777;
     font-family: Arial, 'Helvetic Neue', Helvetica, sans-serif;
     margin: auto;
-    position: relative;
 }
 
 
@@ -50,26 +49,27 @@ li:last-child {
     border-right: none;
 }
 
-/* background-image not working. Tried with "assets/images/gravel.png" also.c
-Also tried putting the background-image under different tags, still no luck.   
-url('assets/images/gravel.png');   */
+a:hover {
+    color: #4aaaa5;
+}
 
 div {
     margin: auto;
     border-top: 2px solid #777777;
     background: url("gravel.png");
     flex: 1 0 auto;
+    overflow: auto;
+    clear: both;
 }
 
 main {
     background-color: #ffffff;
     clear: left;
     border: 2px solid #dddddd;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 0px 20px;
     margin: 20px auto;
     width: 920px;
     overflow: auto;
-
 }
 
 .main-header {
@@ -81,6 +81,8 @@ main {
 #me {
     float: left;
     margin-right: 20px;
+    overflow: auto;
+    margin-bottom: 10px;
 }
 
 input[type=text], textarea {
@@ -92,6 +94,7 @@ input[type=submit] {
     background-color: #4aaaa5;
     color: white;
     padding: 5px;
+    margin-bottom: 10px;
 }
 
 .port-img {
